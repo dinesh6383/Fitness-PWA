@@ -1,0 +1,12 @@
+name = "fitness-coach-proxy"
+main = "src/index.ts"
+compatibility_date = "2025-09-01"
+
+[vars]
+# Set this to your deployed app origin (e.g. https://fitness.pages.dev) before going live.
+ALLOWED_ORIGIN = "http://localhost:5173"
+MODEL = "claude-sonnet-5-5"
+
+# Secrets (never commit them):
+#   npx wrangler secret put ANTHROPIC_API_KEY
+#   npx wrangler secret put APP_TOKEN

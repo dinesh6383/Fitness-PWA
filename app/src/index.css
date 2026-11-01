@@ -1,0 +1,5 @@
+@import "tailwindcss";
+body { background: #0f172a; color: #e2e8f0; }
+.in { @apply w-full rounded-lg bg-slate-800 border border-slate-700 px-3 py-2 text-base; }
+.btn { @apply rounded-lg bg-sky-500 text-slate-950 font-medium px-4 py-3 disabled:opacity-40; }
+.btn2 { @apply rounded-lg bg-slate-800 border border-slate-700 px-4 py-3; }

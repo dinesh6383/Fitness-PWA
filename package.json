@@ -1,0 +1,12 @@
+{
+  "name": "fitness-pwa",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["shared", "app", "worker"],
+  "scripts": {
+    "test": "npm run test -w shared && npm run test -w worker && npm run test -w app",
+    "typecheck": "npm run typecheck -w shared && npm run typecheck -w app && npm run typecheck -w worker",
+    "dev": "npm run dev -w app",
+    "build": "npm run build -w app"
+  }
+}
